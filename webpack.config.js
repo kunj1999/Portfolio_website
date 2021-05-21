@@ -6,7 +6,7 @@ module.exports = {
   entry: './public/src/index.js',
   output: {
      filename: 'bundle_index.js',
-     publicPath: '/assets',
+     publicPath: 'public',
      path: path.resolve(__dirname+"/public/", "dist")
   },
   module: {
@@ -22,5 +22,13 @@ module.exports = {
         }
       }
     ]
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin ({
+      inject: "body",
+      filename: __dirname + "/public/index.html",
+      template: __dirname + "/template-index.html",
+      publicPath: "dist/"
+    })
+  ]
 }
