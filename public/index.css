@@ -70,11 +70,6 @@ body {
     color: black;
 }
 
-/*
-background: rgb(237,239,240);
-background: linear-gradient(260deg, rgba(237,239,240,1) 0%, rgba(241,241,241,1) 100%);
-*/
-
 /*****************************About***************************************/
 .about-wrap {
     background-image: linear-gradient(rgba(237,239,240,0.55) 0%, rgba(241,241,241,0.55) 100%);
